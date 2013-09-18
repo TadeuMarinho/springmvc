@@ -1,0 +1,19 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+    "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="modelo" template="/paginas/modelo/modelo.jsp">
+		<put-attribute name="cabecalho" value="/paginas/publica/cabecalho.jsp" />
+		<put-attribute name="mensagens" value="/paginas/mensagens.jsp" />
+		<put-attribute name="corpo" value="Incluir corpo" />
+		<put-attribute name="rodape" value="/paginas/publica/rodape.jsp" />
+	</definition>
+	
+	<definition name="login" extends="modelo">
+        <put-attribute name="corpo" value="/paginas/publica/login.jsp" />
+    </definition>
+	
+	<definition name="paginas/privada/*/*" extends="modelo">
+        <put-attribute name="corpo" value="/paginas/privada/{1}/{2}.jsp" />
+	</definition>
+</tiles-definitions>

@@ -1,0 +1,11 @@
+TODO:
+  - Upload;
+  - E-mail;
+  - Gráficos (javafx, jfeechart ...);
+  - Google maps;
+  - Colocar uma imagem para utilizar resources do springmvc;
+  - Deixar o banco configurável via pom;
+  - Paginação;
+
+Problemas: 
+  - Criar um interpolator do hibernate validator para os casos do @Valid no viewController

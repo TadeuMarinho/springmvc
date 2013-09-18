@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+    <Resource name="jdbc/springmvc-desenv" auth="Container" type="javax.sql.DataSource" 
+            maxActive="50" maxIdle="30" maxWait="10000"
+            username="postgres" password="postgresql" 
+            driverClassName="org.postgresql.Driver"
+            url="jdbc:postgresql://localhost:5432/springmvc" />
+
+</Context>
